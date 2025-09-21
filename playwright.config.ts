@@ -30,6 +30,12 @@ export default defineConfig({
   use: {
     headless: true,
     screenshot: 'only-on-failure', // ถ้าต้องการเก็บ screenshot เมื่อทดสอบล้มเหลว
+    launchOptions:{
+          args: [
+        '--start-maximized',
+      ]
+    },
+    ignoreHTTPSErrors: true,
   },
 
   /* Configure projects for major browsers */
